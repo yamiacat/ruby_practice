@@ -9,13 +9,10 @@ puts "The leap years between #{s_year} and #{e_year} are:"
 year = s_year
 
 while year <= e_year
-  if year % 4 != 0
-    year += 1 
-  elsif (year % 100 == 0) && (year % 400 != 0)
-    year += 1
-  elsif 
+  if year % 4 == 0
+    if (year % 100 != 0) || (year % 400 == 0)
     print "#{year}, " 
-    year += 1
+    end
   end
-
+  year += 1
 end
