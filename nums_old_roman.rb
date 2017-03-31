@@ -16,8 +16,7 @@ def rome(n)
 
 end
 
-puts = "Gimme a number between 1 and 3500 and I'll"
-puts = "give you the old timey Roman numerals version!"
+puts "Gimme a number between 1 and 3500 and I'll  give you the old timey Roman numerals version!"
 
 input = gets.chomp.to_i
 
