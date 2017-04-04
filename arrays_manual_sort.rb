@@ -1,15 +1,14 @@
 def sort(unsorted_array)
   return_array = []
-  x = unsorted_array.max
-  return_array.push(x)
-  unsorted_array.delete(x)
-  
-  if x != nil
-    sort(unsorted_array)
-  else
-    return return_array
-  end
-
+  while true
+    if unsorted_array.max != nil
+      return_array.unshift(unsorted_array.max)
+      unsorted_array.delete(unsorted_array.max)
+    else
+      break
+    end
+  end 
+return return_array
 end
 
 array =[] 
